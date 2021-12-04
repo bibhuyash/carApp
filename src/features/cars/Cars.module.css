@@ -1,0 +1,26 @@
+@value snuff from 'styles/variables.css';
+
+.cars {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .cars {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: snuff;
+}

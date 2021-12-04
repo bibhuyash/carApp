@@ -1,0 +1,99 @@
+@value blueBell, deepBlush, snuff from 'styles/variables.css';
+
+.list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: auto;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.info > p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.infoIcon {
+  font-size: 50px;
+  color: blueBell;
+}
+
+.refreshButton {
+  padding: 3px;
+  border: 1px solid deepBlush;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.listItem {
+  display: flex;
+  width: 100%;
+  min-height: 70px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid snuff;
+  font-size: 12px;
+  padding: 5px;
+  word-break: break-word;
+  transition: 0.5s linear background-color;
+}
+
+.listItem:last-child {
+  border-bottom: 0;
+}
+
+.listItem:hover {
+  background-color: snuff;
+}
+
+.virtualListContainer {
+  flex: 1;
+  padding: 5px 0;
+}
+
+.noItemsFound {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.crashIcon {
+  color: deepBlush;
+}
+
+@media only screen and (max-width: 1000px) {
+  .list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .listItem {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid snuff;
+  }
+
+  .listItem:last-child {
+    border: 1px solid snuff;
+  }
+}

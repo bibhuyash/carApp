@@ -1,0 +1,23 @@
+@value snuff, whiteLilac, regentGray from 'styles/variables.css';
+
+.search {
+  height: 40px;
+  position: relative;
+}
+
+.search > input {
+  width: 100%;
+  height: 100%;
+  padding: 0 25px 0 10px;
+  border: 0;
+  border-bottom: 1px solid snuff;
+  background: whiteLilac;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: regentGray;
+}

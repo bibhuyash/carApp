@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.container a {
+  display: inherit;
+  margin-left: 5px;
+}

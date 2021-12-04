@@ -1,0 +1,55 @@
+@value snuff from 'styles/variables.css';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  min-height: 100px;
+  border: 1px solid snuff;
+  overflow: hidden;
+  animation: moving 0.3s linear;
+}
+
+@keyframes moving {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.section:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.section:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.header {
+  display: flex;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: snuff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 8px;
+  }
+}
