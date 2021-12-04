@@ -7,7 +7,7 @@ The api provides a list of available makes, models of each make and specific car
 ## Local dev setup guide
 
 1. Clone repo
-2. cd your-car/
+2. cd car-app/
 3. install dependencies: **yarn**
 4. start local server and react dev server: **yarn start-with-local-server**
    or manually start local server: **node apiserver/server.js** and start react dev server: **yarn start**
@@ -16,7 +16,7 @@ The api provides a list of available makes, models of each make and specific car
 ## Local build setup guide
 
 1. Clone repo
-2. cd your-car/
+2. cd car-app/
 3. install dependencies: **yarn**
 4. **npm install -g serve** or **yarn global add serve**
 5. start local server: **node apiserver/server.js**
@@ -27,7 +27,7 @@ The api provides a list of available makes, models of each make and specific car
 ## Setup tests
 
 1. Clone repo
-2. cd your-car/
+2. cd car-app/
 3. install dependencies: **yarn**
 4. to run all available tests: **yarn test**
 
